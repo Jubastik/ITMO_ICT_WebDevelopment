@@ -1,0 +1,1017 @@
+
+<!doctype html>
+<html lang="ru" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://Jubastik.github.io/ITMO_ICT_WebDevelopment/lab2/task1/">
+      
+      
+        <link rel="prev" href="../../lab1/conclusion/">
+      
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.19">
+    
+    
+      
+        <title>Система учёта научных конференций - Отчеты по лабораторным работам</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.7e37652d.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Перейти к содержанию
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Верхний колонтитул">
+    <a href="../.." title="Отчеты по лабораторным работам" class="md-header__button md-logo" aria-label="Отчеты по лабораторным работам" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Отчеты по лабораторным работам
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Система учёта научных конференций
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Поиск" placeholder="Поиск" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Поиск">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Очистить" aria-label="Очистить" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Инициализация поиска
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Вкладки" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Главная
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../lab1/task1/" class="md-tabs__link">
+          
+  
+  
+  Лабораторная работа №1
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Лабораторная работа №2
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Навигация" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Отчеты по лабораторным работам" class="md-nav__button md-logo" aria-label="Отчеты по лабораторным работам" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Отчеты по лабораторным работам
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Главная
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Лабораторная работа №1
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Лабораторная работа №1
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab1/task1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Задание 1: UDP Клиент-Сервер
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab1/task2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Задание 2: TCP Калькулятор
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab1/task3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Задание 3: HTTP Сервер
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab1/task4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Задание 4: TCP Чат
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab1/task5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Задание 5: Веб-сервер (GET/POST)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab1/conclusion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Вывод
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Лабораторная работа №2
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Лабораторная работа №2
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Система учёта научных конференций
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Система учёта научных конференций
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ход выполнения
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ход выполнения">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модели данных
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Формы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL адреса и Пользовательский функционал
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Представления
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Панель администратора
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Скриншоты сайта
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Содержание">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Содержание
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ход выполнения
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ход выполнения">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Модели данных
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Формы
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#url" class="md-nav__link">
+    <span class="md-ellipsis">
+      URL адреса и Пользовательский функционал
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Представления
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Панель администратора
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Скриншоты сайта
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">Система учёта научных конференций</h1>
+<p>В этой лабораторной работе было разработано веб приложение для учёта и управления научными конференциями. Система
+позволяет пользователям регистрироваться, просматривать список предстоящих конференций, подавать заявки на выступление,
+а также оставлять отзывы и оценки. Администратор обладает возможностью через админку рекомендовать доклады к публикации.</p>
+<hr />
+<h2 id="_2">Ход выполнения</h2>
+<h3 id="_3">Модели данных</h3>
+<p>Первым шагом была спроектирована основа приложения - модели данных.</p>
+<ul>
+<li><strong>Conference</strong> хранит ключевую информацию о мероприятии: название, тематики, место и даты проведения, а также
+  подробное описание и условия участия.</li>
+<li><strong>Location</strong> и <strong>Topic</strong> являются вспомогательными моделями для структурирования информации.</li>
+<li><strong>Participation</strong> - модель, связывающая пользователя и конференцию. Она содержит тему доклада
+  и специальное логическое поле <code>recommended_for_publication</code> для отметки администратором.</li>
+<li><strong>Review</strong> позволяет пользователям оставлять отзывы на конференции. Включает текст
+  комментария, рейтинг от 1 до 10 и дату создания. Для предотвращения дублирования была установлена уникальность на
+  пару "пользователь-конференция".</li>
+</ul>
+<pre><code class="language-python">class Location(models.Model):
+    &quot;&quot;&quot;Модель места проведения конференции.&quot;&quot;&quot;
+    name = models.CharField(&quot;Название места&quot;, max_length=255)
+    address = models.CharField(&quot;Адрес&quot;, max_length=300)
+    description = models.TextField(&quot;Описание места&quot;, blank=True)
+
+    class Meta:
+        verbose_name = &quot;Место проведения&quot;
+        verbose_name_plural = &quot;Места проведения&quot;
+
+    def __str__(self):
+        return self.name
+
+
+class Topic(models.Model):
+    &quot;&quot;&quot;Модель тематики конференции.&quot;&quot;&quot;
+    name = models.CharField(&quot;Название тематики&quot;, max_length=150, unique=True)
+
+    class Meta:
+        verbose_name = &quot;Тематика&quot;
+        verbose_name_plural = &quot;Тематики&quot;
+
+    def __str__(self):
+        return self.name
+
+
+class Conference(models.Model):
+    &quot;&quot;&quot;Модель научной конференции.&quot;&quot;&quot;
+    title = models.CharField(&quot;Название&quot;, max_length=255)
+    topics = models.ManyToManyField(Topic, verbose_name=&quot;Тематики&quot;, related_name=&quot;conferences&quot;)
+    location = models.ForeignKey(
+        Location,
+        on_delete=models.SET_NULL,
+        null=True,
+        verbose_name=&quot;Место проведения&quot;
+    )
+    start_date = models.DateField(&quot;Дата начала&quot;)
+    end_date = models.DateField(&quot;Дата окончания&quot;)
+    description = models.TextField(&quot;Описание конференции&quot;)
+    conditions = models.TextField(&quot;Условия участия&quot;)
+
+    class Meta:
+        verbose_name = &quot;Конференция&quot;
+        verbose_name_plural = &quot;Конференции&quot;
+        ordering = ['-start_date']  # сначала новые
+
+    def __str__(self):
+        return self.title
+
+
+class Participation(models.Model):
+    &quot;&quot;&quot;Модель регистрации пользователя на выступление в конференции.&quot;&quot;&quot;
+    participant = models.ForeignKey(User, on_delete=models.CASCADE, related_name=&quot;participations&quot;)
+    conference = models.ForeignKey(Conference, on_delete=models.CASCADE, related_name=&quot;participations&quot;)
+    presentation_title = models.CharField(&quot;Тема доклада&quot;, max_length=255)
+    created_at = models.DateTimeField(&quot;Дата регистрации&quot;, auto_now_add=True)
+
+    recommended_for_publication = models.BooleanField(
+        &quot;Рекомендован к публикации&quot;,
+        default=False,
+        help_text=&quot;Отмечается администратором&quot;
+    )
+
+    class Meta:
+        verbose_name = &quot;Регистрация на выступление&quot;
+        verbose_name_plural = &quot;Регистрации на выступления&quot;
+        # один пользователь может зарегистрироваться на конференцию только один раз
+        unique_together = ('participant', 'conference')
+
+    def __str__(self):
+        return f&quot;{self.participant.username} на '{self.conference.title}'&quot;
+
+
+class Review(models.Model):
+    &quot;&quot;&quot;Модель отзыва о конференции.&quot;&quot;&quot;
+    author = models.ForeignKey(User, on_delete=models.CASCADE, related_name=&quot;reviews&quot;)
+    conference = models.ForeignKey(Conference, on_delete=models.CASCADE, related_name=&quot;reviews&quot;)
+    text = models.TextField(&quot;Текст комментария&quot;)
+    rating = models.PositiveSmallIntegerField(
+        &quot;Рейтинг&quot;,
+        validators=[MinValueValidator(1), MaxValueValidator(10)]
+    )
+    created_at = models.DateTimeField(&quot;Дата создания&quot;, auto_now_add=True)
+
+    class Meta:
+        verbose_name = &quot;Отзыв&quot;
+        verbose_name_plural = &quot;Отзывы&quot;
+        ordering = ['-created_at']  # сначала новые
+        unique_together = ('author', 'conference')  # Один пользователь - один отзыв на конференцию
+
+    def __str__(self):
+        return f&quot;Отзыв от {self.author.username} на '{self.conference.title}'&quot;
+
+</code></pre>
+<p><img alt="Схема бд" src="../../img/lab2_db.png" /></p>
+<h3 id="_4">Формы</h3>
+<p>Были созданы две основные формы на основе <code>ModelForm</code>:</p>
+<ul>
+<li><strong>ParticipationForm</strong> содержит одно поле - <code>presentation_title</code> (тема доклада), которое пользователь заполняет при
+  подаче заявки.</li>
+<li>
+<p><strong>ReviewForm</strong> позволяет указать рейтинг и текст отзыва.</p>
+</li>
+<li>
+<p>Для регистрации новых пользователей применялась стандартная форма Django <code>UserCreationForm</code>.</p>
+</li>
+</ul>
+<pre><code class="language-python">class ParticipationForm(forms.ModelForm):
+    class Meta:
+        model = Participation
+        fields = ['presentation_title']
+        labels = {
+            'presentation_title': 'Тема вашего доклада'
+        }
+
+
+class ReviewForm(forms.ModelForm):
+    class Meta:
+        model = Review
+        fields = ['rating', 'text']
+        widgets = {
+            'rating': forms.NumberInput(attrs={'class': 'form-control', 'min': 1, 'max': 10}),
+            'text': forms.Textarea(attrs={'class': 'form-control', 'rows': 4}),
+        }
+        labels = {
+            'rating': 'Ваша оценка (от 1 до 10)',
+            'text': 'Текст отзыва'
+        }
+
+</code></pre>
+<h3 id="url">URL адреса и Пользовательский функционал</h3>
+<p>Для навигации по сайту и выполнения действий была настроена маршрутизация.</p>
+<ul>
+<li>Главная страница (<code>/</code>) отображает список всех конференций с поиском и пагинацией.</li>
+<li>Детальная информация о конференции доступна по адресу <code>/conference/&lt;id&gt;/</code>.</li>
+<li>Процессы аутентификации вынесены в  <code>accounts/</code>, где <code>/accounts/signup/</code> отвечает за регистрацию, а
+  для входа и выхода используются встроенные представления Django (<code>/accounts/login/</code>, <code>/accounts/logout/</code>).</li>
+<li>Для создания, редактирования и удаления заявок на участие были созданы соответствующие
+  ендпоинты: <code>/conference/&lt;id&gt;/participate/</code>, <code>/participation/&lt;id&gt;/edit/</code> и <code>/participation/&lt;id&gt;/delete/</code>.</li>
+<li>Добавление отзыва происходит по адресу <code>/conference/&lt;id&gt;/review/</code>.</li>
+</ul>
+<h3 id="_5">Представления</h3>
+<p>Логика работы приложения реализована с помощью Class Based Views.</p>
+<ul>
+<li><strong>ConferenceListView</strong> отвечает за отображение списка конференций. В нем была реализована логика поиска по названию и
+  описанию с помощью <code>Q</code> объектов, а также пагинация (<code>paginate_by</code>).</li>
+<li><strong>ConferenceDetailView</strong> отображает полную информацию о конференции, а также связанные с ней списки участников и
+  отзывы.</li>
+<li>Классы <strong>ParticipationCreateView</strong>, <strong>ParticipationUpdateView</strong> и <strong>ParticipationDeleteView</strong> управляют жизненным
+  циклом заявки на выступление. Для защиты роутов использовались миксины <code>LoginRequiredMixin</code>
+  и <code>UserPassesTestMixin</code>, которые гарантируют, что пользователь может редактировать или удалять только свою собственную
+  заявку.</li>
+<li><strong>ReviewCreateView</strong> обрабатывает отправку отзыва.</li>
+</ul>
+<h3 id="_6">Панель администратора</h3>
+<p>Была кастомизирована панель администратора. В файле <code>admin.py</code> для
+модели <code>Participation</code> поле <code>recommended_for_publication</code> было добавлено в <code>list_editable</code>. Это позволит администратору
+изменять статус рекомендации к публикации прямо из общего списка заявок без необходимости переходить на страницу
+редактирования каждой из них, что значительно повышает удобство работы.</p>
+<p><img alt="Админ панель" src="../../img/lab2_admin.png" />
+<img alt="Админ панель" src="../../img/lab2_admin2.png" /></p>
+<h3 id="_7">Скриншоты сайта</h3>
+<p><img alt="Главная страничка" src="../../img/lab2_main_page.png" />
+<img alt="Детали конференции" src="../../img/lab2_info_page.png" /></p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  К началу
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "\u0421\u043a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u043d\u043e \u0432 \u0431\u0443\u0444\u0435\u0440", "clipboard.copy": "\u041a\u043e\u043f\u0438\u0440\u043e\u0432\u0430\u0442\u044c \u0432 \u0431\u0443\u0444\u0435\u0440", "search.result.more.one": "\u0415\u0449\u0451 1 \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.more.other": "\u0415\u0449\u0451 # \u043d\u0430 \u044d\u0442\u043e\u0439 \u0441\u0442\u0440\u0430\u043d\u0438\u0446\u0435", "search.result.none": "\u0421\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439 \u043d\u0435 \u043d\u0430\u0439\u0434\u0435\u043d\u043e", "search.result.one": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e 1 \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0435", "search.result.other": "\u041d\u0430\u0439\u0434\u0435\u043d\u043e \u0441\u043e\u0432\u043f\u0430\u0434\u0435\u043d\u0438\u0439: #", "search.result.placeholder": "\u041d\u0430\u0447\u043d\u0438\u0442\u0435 \u043f\u0435\u0447\u0430\u0442\u0430\u0442\u044c \u0434\u043b\u044f \u043f\u043e\u0438\u0441\u043a\u0430", "search.result.term.missing": "\u041e\u0442\u0441\u0443\u0442\u0441\u0442\u0432\u0443\u0435\u0442", "select.version": "\u0412\u044b\u0431\u0435\u0440\u0438\u0442\u0435 \u0432\u0435\u0440\u0441\u0438\u044e"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.92b07e13.min.js"></script>
+      
+    
+  </body>
+</html>
